@@ -28,6 +28,8 @@ func main() {
 
 	router.GET("/user", userhander.UserHandler)
 
+	router.POST("/api/customer", customer.CreateCustomerHandler)
+
 	err := router.Run()
 	if err != nil {
 		panic(err)

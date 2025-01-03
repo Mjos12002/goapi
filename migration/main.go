@@ -9,5 +9,5 @@ import (
 
 func main() {
 	db := database.DbConnection()
-	db.AutoMigrate(&customertype.CustomerType{}, producttype.ProductType{}, product.Product{})
+	db.AutoMigrate(&customertype.CustomerType{}, &producttype.ProductType{}, &product.Product{})
 }
